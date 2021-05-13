@@ -1,5 +1,9 @@
 module.exports = {
   presets: [
-    '@vue/cli-plugin-babel/preset'
+    "@vue/app"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
   ]
 }

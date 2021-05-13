@@ -1,19 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <p>
-    Oieeee
-  </p>
+  <div>
+    <router-view></router-view>
+    <loading :show="loading" :label="label"></loading>
+  </div>
+
 </template>
 
 <script>
+
+import Loading from "vue-full-loading";
+import events from "./events";
+
 export default {
-  name: 'App',
+  data (){
+    return {
+      loading: false,
+      label: 'Carregando ...'
+    }
+  },
+
+  components: {Loading},
+  mounted(){
+    events.$on('loading', this.showLoading);
+    events.$on('unloading', this.unShowLoading);
+  },
+  methods: {
+    showLoading (){
+      this.loading = true;
+    },
+    unShowLoading(){
+      this.loading = false;
+    }
+  }
 }
 </script>
 
 <style>
 * {
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
   font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
