@@ -41,13 +41,7 @@ router.beforeEach((to, next) => {
     next();
 });
 
-/* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    render: h => h(App),
     router,
-    store,
-    data: {
-        Chartist: Chartist
-    }
-});
+    render: h => h(App)
+}).$mount("#app")
