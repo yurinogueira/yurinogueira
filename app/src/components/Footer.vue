@@ -2,7 +2,7 @@
   <footer class="text-center text-lg-start bg-light text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="me-5 d-none d-lg-block">
-        <span>Caso possua alguma dúvida e/ou caso necessite entrar em contato, canais: </span>
+        <span>Caso necessite de entrar em contato, segue meus canais:</span>
       </div>
 
       <div>
