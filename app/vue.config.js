@@ -1,7 +1,7 @@
 // vue.config.js
 module.exports = {
     "runtimeCompiler": true,
-    publicPath: '/yurinogueira/',
+    publicPath: '/',
     lintOnSave: true,
     devServer: {
         clientLogLevel: 'info'

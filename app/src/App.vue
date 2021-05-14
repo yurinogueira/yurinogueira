@@ -11,4 +11,21 @@
   text-align: center;
   color: #2c3e50;
 }
+
+.secondary {
+  color: darkgray !important;
+  font-weight: bolder !important;
+}
+
+.secondary:hover {
+  color: royalblue !important;
+}
+
+.primary {
+  color: lightgray !important;
+}
+
+.primary:hover {
+  color: mediumspringgreen !important;
+}
 </style>

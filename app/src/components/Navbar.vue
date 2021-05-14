@@ -1,21 +1,25 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
-    <router-link class="navbar-brand" to="/">Yuri Nogueira</router-link>
-    <button class="navbar-toggler"
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="nav-item">
+      <router-link class="secondary primary nav-link" to="/">
+        Yuri Nogueira
+      </router-link>
+    </div>
+    <button class="me-2 navbar-toggler mt-auto mb-auto"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarScroll"
             aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="size navbar-toggler-icon"></span>
     </button>
-    <ul class="collapse navbar-collapse navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="navbarScroll">
+    <ul class="collapse navbar-collapse navbar-nav mt-auto mb-auto navbar-nav-scroll" id="navbarScroll">
       <li class="nav-item">
-        <router-link class="nav-link" to="/">Home</router-link>
+        <router-link class="secondary nav-link" to="/">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/about">Sobre</router-link>
+        <router-link class="secondary nav-link" to="/about">Sobre</router-link>
       </li>
     </ul>
   </nav>
@@ -26,7 +30,3 @@ export default {
   name: "Navbar"
 }
 </script>
-
-<style scoped>
-
-</style>
