@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
+      - name: Go to folder
+        run: cd app
       - name: Install packages
         run: yarn
       - name: Set Creds
