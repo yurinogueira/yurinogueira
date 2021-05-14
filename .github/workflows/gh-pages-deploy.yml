@@ -12,11 +12,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Go to folder
-        run: cd ./app
       - name: Install packages
+        working-directory: ./app
         run: yarn
       - name: Set Creds
+        working-directory: ./app
         run: git config user.name "yurinogueira" && git config user.email "yurinogueira@id.uff.br"
       - name: Deploy
+        working-directory: ./app
         run: yarn deploy
