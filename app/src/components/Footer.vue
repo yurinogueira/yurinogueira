@@ -2,27 +2,21 @@
   <footer class="text-center text-lg-start bg-light text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="me-5 d-none d-lg-block">
-        <span>Entre em contato</span>
+        <span>Caso possua alguma dúvida e/ou caso necessite entrar em contato, canais: </span>
       </div>
 
       <div>
-        <a href="https://facebook.com/" class="me-4 text-reset">
-          <i class="fab fa-facebook-b"></i>
+        <a href="https://facebook.com/yuri.resgatgames" class="me-5 text-reset">
+          <font-awesome-icon :icon="getFab('facebook-f')"></font-awesome-icon>
         </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/yuri_nmds" class="me-5 text-reset">
+          <font-awesome-icon :icon="getFab('twitter')"></font-awesome-icon>
         </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
+        <a href="https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva-9132571bb/" class="me-5 text-reset">
+          <font-awesome-icon :icon="getFab('linkedin')"></font-awesome-icon>
         </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/yurinogueira/" class="me-4 text-reset">
+          <font-awesome-icon :icon="getFab('github')"></font-awesome-icon>
         </a>
       </div>
     </section>
@@ -32,61 +26,71 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <font-awesome-icon :icon="getFas('gem')"></font-awesome-icon>
+              Yuri Nogueira
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              Olá me chamo Yuri Nogueira Moreira da Silva, sou estudante de Ciência
+              da Computação e criei esse site para aprimorar meus conhecimentos. e
+              ajudar a quem conseguir :)
             </p>
           </div>
 
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Projetos:
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="https://eterniaserver.com.br/" class="text-reset text-decoration-none">
+                <font-awesome-icon :icon="getFas('cubes')"></font-awesome-icon>
+                EterniaServer
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="" class="text-reset text-decoration-none">
+                -
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="" class="text-reset text-decoration-none">
+                -
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="" class="text-reset text-decoration-none">
+                -
+              </a>
             </p>
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Interesses
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="https://en.wikipedia.org/wiki/Back_end" class="text-reset text-decoration-none">
+                <font-awesome-icon :icon="getFas('server')"></font-awesome-icon>
+                Backend
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="https://linuxfoundation.org/" class="text-reset text-decoration-none">
+                <font-awesome-icon :icon="getFab('linux')"></font-awesome-icon>
+                Linux
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
+              <a href="https://openjdk.java.net/" class="text-reset text-decoration-none">
+                <font-awesome-icon :icon="getFab('java')"></font-awesome-icon>
+                Java
+              </a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="text-reset text-decoration-none">
+                <font-awesome-icon :icon="getFas('brain')"></font-awesome-icon>
+                I.A.
+              </a>
             </p>
-          </div>
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Contact
-            </h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
           </div>
         </div>
       </div>
@@ -100,7 +104,22 @@
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebookF, faTwitter, faLinkedin, faGithub, faLinux, faJava } from '@fortawesome/free-brands-svg-icons'
+import { faGem, faCubes, faServer, faBrain } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faFacebookF, faTwitter, faLinkedin, faGithub, faGem, faCubes, faServer, faLinux, faJava, faBrain)
+
 export default {
   name: "Footer",
+
+  methods: {
+    getFab(iconName) {
+      return { prefix: 'fab', iconName: iconName }
+    },
+    getFas(iconName) {
+      return { prefix: 'fas', iconName: iconName }
+    }
+  },
 }
 </script>
