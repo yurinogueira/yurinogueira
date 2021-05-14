@@ -6,6 +6,9 @@
       </div>
 
       <div>
+        <a href="https://discordapp.com/users/228707634319065088" class="me-5 text-reset">
+          <font-awesome-icon :icon="getFab('discord')"></font-awesome-icon>
+        </a>
         <a href="https://facebook.com/yuri.resgatgames" class="me-5 text-reset">
           <font-awesome-icon :icon="getFab('facebook-f')"></font-awesome-icon>
         </a>
@@ -15,7 +18,7 @@
         <a href="https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva-9132571bb/" class="me-5 text-reset">
           <font-awesome-icon :icon="getFab('linkedin')"></font-awesome-icon>
         </a>
-        <a href="https://github.com/yurinogueira/" class="me-4 text-reset">
+        <a href="https://github.com/yurinogueira/" class="me-1 text-reset">
           <font-awesome-icon :icon="getFab('github')"></font-awesome-icon>
         </a>
       </div>
@@ -104,21 +107,26 @@
 </template>
 
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookF, faTwitter, faLinkedin, faGithub, faLinux, faJava } from '@fortawesome/free-brands-svg-icons'
-import { faGem, faCubes, faServer, faBrain } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookF, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinux, faJava, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGem, faCubes, faServer, faBrain } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faFacebookF, faTwitter, faLinkedin, faGithub, faGem, faCubes, faServer, faLinux, faJava, faBrain)
+library.add(
+    faFacebookF, faTwitter, faLinkedin,
+    faGithub, faGem, faCubes, faServer,
+    faLinux, faJava, faBrain, faDiscord
+);
 
 export default {
   name: "Footer",
 
   methods: {
     getFab(iconName) {
-      return { prefix: 'fab', iconName: iconName }
+      return { prefix: 'fab', iconName: iconName };
     },
     getFas(iconName) {
-      return { prefix: 'fas', iconName: iconName }
+      return { prefix: 'fas', iconName: iconName };
     }
   },
 }
