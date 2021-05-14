@@ -1,37 +1,12 @@
 <template>
-  <div>
-    <router-view></router-view>
-    <loading :show="loading" :label="label"></loading>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
   </div>
-
 </template>
 
 <script>
-
-import Loading from "vue-full-loading";
-import events from "./events";
-
 export default {
-  data (){
-    return {
-      loading: false,
-      label: 'Carregando ...'
-    }
-  },
-
-  components: {Loading},
-  mounted(){
-    events.$on('loading', this.showLoading);
-    events.$on('unloading', this.unShowLoading);
-  },
-  methods: {
-    showLoading (){
-      this.loading = true;
-    },
-    unShowLoading(){
-      this.loading = false;
-    }
-  }
+  name: 'App',
 }
 </script>
 
