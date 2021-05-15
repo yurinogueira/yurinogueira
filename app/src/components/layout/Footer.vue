@@ -1,33 +1,37 @@
 <template>
   <footer class="text-center text-lg-start bg-light text-muted">
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <div class="me-5 d-none d-lg-block">
-        <span>Caso necessite de entrar em contato, segue meus canais:</span>
-      </div>
+    <section class="border-bottom mt-3 pb-2 pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="collapse d-none d-lg-block col-sm">
+            <span>Caso necessite de entrar em contato:</span>
+          </div>
 
-      <div>
-        <a href="https://discordapp.com/users/228707634319065088" class="me-5 text-reset">
-          <font-awesome-icon :icon="getFab('discord')"></font-awesome-icon>
-        </a>
-        <a href="https://facebook.com/yuri.resgatgames" class="me-5 text-reset">
-          <font-awesome-icon :icon="getFab('facebook-f')"></font-awesome-icon>
-        </a>
-        <a href="https://twitter.com/yuri_nmds" class="me-5 text-reset">
-          <font-awesome-icon :icon="getFab('twitter')"></font-awesome-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva-9132571bb/" class="me-5 text-reset">
-          <font-awesome-icon :icon="getFab('linkedin')"></font-awesome-icon>
-        </a>
-        <a href="https://github.com/yurinogueira/" class="me-1 text-reset">
-          <font-awesome-icon :icon="getFab('github')"></font-awesome-icon>
-        </a>
+          <div class="col-sm">
+            <a href="https://discordapp.com/users/228707634319065088" class="me-5 text-reset">
+              <font-awesome-icon :icon="getFab('discord')"></font-awesome-icon>
+            </a>
+            <a href="https://facebook.com/yuri.resgatgames" class="me-5 text-reset">
+              <font-awesome-icon :icon="getFab('facebook-f')"></font-awesome-icon>
+            </a>
+            <a href="https://twitter.com/yuri_nmds" class="me-5 text-reset">
+              <font-awesome-icon :icon="getFab('twitter')"></font-awesome-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva-9132571bb/" class="me-5 text-reset">
+              <font-awesome-icon :icon="getFab('linkedin')"></font-awesome-icon>
+            </a>
+            <a href="https://github.com/yurinogueira/" class="me-1 text-reset">
+              <font-awesome-icon :icon="getFab('github')"></font-awesome-icon>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start mt-2">
         <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
             <h6 class="text-uppercase fw-bold mb-4">
               <font-awesome-icon :icon="getFas('gem')"></font-awesome-icon>
               Yuri Nogueira
@@ -39,7 +43,7 @@
             </p>
           </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
             <h6 class="text-uppercase fw-bold mb-4">
               Projetos:
             </h6>
@@ -59,23 +63,12 @@
                 -
               </a>
             </p>
-            <p>
-              <a href="" class="text-reset text-decoration-none">
-                -
-              </a>
-            </p>
           </div>
 
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
             <h6 class="text-uppercase fw-bold mb-4">
               Interesses
             </h6>
-            <p>
-              <a href="https://en.wikipedia.org/wiki/Back_end" class="text-reset text-decoration-none">
-                <font-awesome-icon :icon="getFas('server')"></font-awesome-icon>
-                Backend
-              </a>
-            </p>
             <p>
               <a href="https://linuxfoundation.org/" class="text-reset text-decoration-none">
                 <font-awesome-icon :icon="getFab('linux')"></font-awesome-icon>

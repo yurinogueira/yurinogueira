@@ -2,7 +2,7 @@
   <div class="home">
     <Navbar></Navbar>
     <article class="container">
-      <section class="mt-3">
+      <section class="mt-5 mb-5">
         <div class="row">
           <div class="col-sm">
             <img alt="Vue logo" height="200" width="200" src="../assets/logo.png">
@@ -17,7 +17,7 @@
         </div>
       </section>
 
-      <section class="mt-3 mb-3">
+      <section class="mt-5 mb-5">
         <div class="container">
           <div class="row">
             <div class="card col-sm d-block">
