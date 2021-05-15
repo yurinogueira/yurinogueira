@@ -43,7 +43,7 @@
 
         <div class="row">
           <div class="col-sm">
-            <div class="card-header text-danger h4">Converso de Bases</div>
+            <div class="card-header text-danger h4">Conversor de Bases</div>
             <div class="card-body">
               <p>
                 Um converso entre bases que mostre o que está sendo feito e
