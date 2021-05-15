@@ -16,10 +16,7 @@
     </button>
     <ul class="collapse navbar-collapse navbar-nav mt-auto mb-auto navbar-nav-scroll" id="navbarScroll">
       <li class="nav-item">
-        <router-link class="secondary nav-link" to="/">Home</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link class="secondary nav-link" to="/about">Sobre</router-link>
+        <router-link class="secondary nav-link" to="/sobre">Sobre</router-link>
       </li>
     </ul>
   </nav>

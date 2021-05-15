@@ -5,14 +5,14 @@
       <section class="mt-5 mb-5">
         <div class="row">
           <div class="col-sm">
-            <img alt="Vue logo" height="200" width="200" src="../assets/logo.png">
+            <img alt="logo" height="200" width="200" src="../assets/logo.png">
           </div>
 
           <div class="col-sm mt-auto mb-auto p-4">
             Este <strong class="text-success">site</strong> e todos outros projetos de minha autoria
             são de código aberto e podem ser acessados pelo <strong>GitHub</strong>,
             sinta-se livre para enviar melhorias ou para utilizar
-            como base para projetos pessoais, mas não se esqueça de informar os devidos créditos.
+            como base para projetos pessoais, mas não se esqueça de informar os devidos créditos
           </div>
         </div>
       </section>
@@ -26,7 +26,7 @@
               <p class="card-text">
                 Possui dúvidas em Ponto Flutuante? Não se desespere
                 isso é normal, clique no botão abaixo, talvez isso
-                possa ti ajudar. <span class="secondary">:)</span>
+                possa ti ajudar <span class="secondary">:)</span>
               </p>
               <router-link to="/" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
                 Acessar
@@ -41,7 +41,7 @@
               <p class="card-text">
                 Acha que errou alguma coisa na hora de alterar a
                 base de um número? Acho que vale apena você dá
-                uma verificada, não custa nada.
+                uma verificada, não custa nada
               </p>
               <router-link to="/" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
                 Acessar

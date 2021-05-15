@@ -103,12 +103,12 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookF, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinux, faJava, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faGem, faCubes, faServer, faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faGem, faCubes, faBrain } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     faFacebookF, faTwitter, faLinkedin,
-    faGithub, faGem, faCubes, faServer,
-    faLinux, faJava, faBrain, faDiscord
+    faGithub, faGem, faCubes, faLinux,
+    faJava, faBrain, faDiscord
 );
 
 export default {
