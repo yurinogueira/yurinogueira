@@ -93,7 +93,11 @@
     </section>
 
     <section class="text-center primary bg-dark p-4">
-      © 2021 Copyright:
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" width="20px">
+        <circle cx="490" cy="490" r="440" fill="none" stroke="#FFF" stroke-width="100"/>
+        <path d="M219,428H350a150,150 0 1 1 0,125H219a275,275 0 1 0 0-125z" fill="#FFF"/>
+      </svg>
+      2021 Copyleft:
       <a class="text-reset fw-bold" href="https://yurinogueira.dev.br/">yurinogueira.dev.br</a>
     </section>
   </footer>
