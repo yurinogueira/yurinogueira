@@ -92,13 +92,21 @@
       </div>
     </section>
 
-    <section class="text-center primary bg-dark p-4">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" width="20px">
-        <circle cx="490" cy="490" r="440" fill="none" stroke="#FFF" stroke-width="100"/>
-        <path d="M219,428H350a150,150 0 1 1 0,125H219a275,275 0 1 0 0-125z" fill="#FFF"/>
-      </svg>
-      2021 Copyleft:
-      <a class="text-reset fw-bold" href="https://yurinogueira.dev.br/">yurinogueira.dev.br</a>
+    <section class="text-center primary bg-dark p-3">
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img class="pb-2" alt="Licença Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
+      </a>
+      <br/>
+      Este obra de
+      <a href="https://yurinogueira.dev.br"
+         class="text-reset fw-bold text-decoration-none"
+         property="cc:attributionName"
+         rel="cc:attributionURL">Yuri Nogueira</a>
+      está licenciado com uma Licença
+      <a rel="license"
+         class="text-reset fw-bold text-decoration-none"
+         href="https://creativecommons.org/licenses/by-sa/4.0/">
+        Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
     </section>
   </footer>
 </template>
