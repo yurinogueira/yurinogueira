@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
+import Home from '../views/pages/Home';
+import About from '../views/pages/About';
+import IEEE754 from '../views/features/IEEE754';
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/sobre',
     name: 'About',
     component: About
+  },
+  {
+    path: '/ieee754',
+    name: 'IEEE754',
+    component: IEEE754
   }
 ];
 

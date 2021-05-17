@@ -5,7 +5,7 @@
       <section class="mt-5 mb-5">
         <div class="row">
           <div class="col-sm">
-            <img alt="logo" height="200" width="200" src="../assets/logo.png">
+            <img alt="logo" height="200" width="200" src="../../assets/logo.png">
           </div>
 
           <div class="col-sm mt-auto mb-auto p-4">
@@ -21,14 +21,14 @@
         <div class="container">
           <div class="row">
             <div class="card col-sm d-block">
-              <img alt="IEEE 754" width="200" height="200" src="../assets/ieee754.png">
+              <img alt="IEEE 754" width="200" height="200" src="../../assets/ieee754.png">
               <h5 class="card-title">Ponto Flutuante</h5>
               <p class="card-text">
                 Possui dúvidas em Ponto Flutuante? Não se desespere
                 isso é normal, clique no botão abaixo, talvez isso
                 possa ti ajudar <span class="secondary">:)</span>
               </p>
-              <router-link to="/" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
+              <router-link to="/ieee754" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
                 Acessar
               </router-link>
             </div>
@@ -36,7 +36,7 @@
             <div class="col-sm-1"></div>
 
             <div class="card col-sm d-block">
-              <img alt="Conversões de Bases" width="200" height="200" src="../assets/base-convertion.png">
+              <img alt="Conversões de Bases" width="200" height="200" src="../../assets/base-convertion.png">
               <h5 class="card-title">Conversões de Bases</h5>
               <p class="card-text">
                 Acha que errou alguma coisa na hora de alterar a

@@ -5,7 +5,7 @@
       <section class="mt-5 mb-5">
         <div class="row">
           <div class="col-sm">
-            <img alt="logo" height="200" width="200" src="../assets/logo.png">
+            <img alt="logo" height="200" width="200" src="../../assets/logo.png">
           </div>
 
           <div class="col-sm mt-auto mb-auto p-4">
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="card-header text-danger h4">Ponto Flutuante</div>
+            <div class="card-header text-success h4">Ponto Flutuante</div>
             <div class="card-body">
               <p>
                 Por possuir uma complexidade um pouco maior ele será separado
