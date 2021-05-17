@@ -24,9 +24,9 @@
               <img alt="IEEE 754" width="200" height="200" src="../../assets/ieee754.png">
               <h5 class="card-title">Ponto Flutuante</h5>
               <p class="card-text">
-                Possui dúvidas em Ponto Flutuante? Não se desespere
+                Possui dúvidas em Ponto Flutuante? Não se desespere,
                 isso é normal, clique no botão abaixo, talvez isso
-                possa ti ajudar <span class="secondary">:)</span>
+                possa te ajudar <span class="secondary">:)</span>
               </p>
               <router-link to="/ieee754" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
                 Acessar

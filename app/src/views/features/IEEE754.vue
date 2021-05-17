@@ -182,7 +182,13 @@ export default {
 
     calculateIEEE754() {
       this.ieee754.sign = this.sign === '-' ? '1' : '0';
-      this.ieee754.exponent = ((parseInt(this.cientificNotation.exponent) + 127) >>> 0).toString(2);
+      this.ieee754.exponent = ((127 + parseInt(this.cientificNotation.exponent)) >>> 0).toString(2);
+      const lenght = 8 - this.ieee754.exponent.length;
+      let increase_zero = '';
+      for (let i = 0; i < lenght; i++) {
+        increase_zero += '0';
+      }
+      this.ieee754.exponent = increase_zero.toString() + this.ieee754.exponent.toString();
       this.ieee754.mantissa = this.cientificNotation.fractional;
     },
 
@@ -205,9 +211,9 @@ export default {
       let boolTry = true;
       this.cientificNotation.fractional = '';
       for (let i = 0; i < 23; i++) {
-        if (boolTry && this.bin_decimal.toString().charAt(i) !== '0') {
+        if (boolTry && this.bin_fractional.toString().charAt(i) !== '0') {
           this.cientificNotation.decimal = '1';
-          this.cientificNotation.exponent = '-' + i.toString();
+          this.cientificNotation.exponent = '-' + (i + 1).toString();
           boolTry = false;
         } else if (!boolTry) {
           this.cientificNotation.fractional += this.bin_fractional.toString().charAt(i);

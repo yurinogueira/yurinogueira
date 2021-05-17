@@ -37,8 +37,8 @@
               Yuri Nogueira
             </h6>
             <p>
-              Olá me chamo Yuri Nogueira Moreira da Silva, sou estudante de Ciência
-              da Computação e criei esse site para aprimorar meus conhecimentos. e
+              Olá, me chamo Yuri Nogueira Moreira da Silva. Sou estudante de Ciência
+              da Computação e criei esse site para aprimorar meus conhecimentos e
               ajudar a quem conseguir :)
             </p>
           </div>
