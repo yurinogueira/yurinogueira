@@ -43,7 +43,7 @@
                 base de um número? Acho que vale apena você dá
                 uma verificada, não custa nada
               </p>
-              <router-link to="/" tag="button" type="button" class="btn btn-outline-success w-100 mb-2">
+              <router-link to="/" tag="button" type="button" class="btn btn-outline-danger w-100 mb-2">
                 Acessar
               </router-link>
             </div>
