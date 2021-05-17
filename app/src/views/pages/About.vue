@@ -20,7 +20,7 @@
 
       <hr>
 
-      <section class="mt-5 mb-5">
+      <section class="mt-3 mb-5">
         <div class="row">
           <div class="col-sm">
             <p>

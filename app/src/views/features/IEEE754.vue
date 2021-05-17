@@ -17,8 +17,6 @@
         </div>
       </section>
 
-      <hr>
-
       <section class="mt-5 mb-5">
         <div class="row">
           <div class="col-sm">
@@ -34,68 +32,86 @@
           </button>
         </div>
 
-        <div v-show="is_confirmed">
-          <div class="w-75 container">
-            <hr>
+        <div v-show="is_confirmed" class="card mt-2 pt-2 pb-2">
+          <p class="mb-0 mt-2 ms-1 me-1">
             A primeira coisa que devemos fazer é separar a parte fracional da parte decimal do número
             para facilitarmos o nosso trabalho.
             <br>
-            Decimal: <strong class="text-success">{{sign}}{{decimal}}</strong>
-            <br>
-            Fracional: <strong class="text-success">0,{{fractional}}</strong>
+            Decimal: <strong class="text-success">{{ sign }}{{ decimal }}</strong>
+            Fracional: <strong class="text-success">0,{{ fractional }}</strong>
+          </p>
 
-            <hr>
+          <hr>
+
+          <p class="mb-0 ms-1 me-1">
             Agora vamos converter para binário, como vocês estão com dúvidas em Ponto Flutuante
             acredito que já saibam como realizar essa conversão, então irei simplesmente converter
-            direto.
+            direto. Lembrando que alguns números não são perfeitamente convertiveis, assim vou
+            limitar nossa mantissa em <strong>23</strong> casas, com isso iremos haver uma perda
+            de precissão em certos valores.
             <br>
-            <strong class="text-success">{{sign}}{{decimal}}</strong><strong>(10)</strong>
+            <strong class="text-success">{{ sign }}{{ decimal }}</strong><strong>(10)</strong>
             ==
-            <strong class="text-success">{{bin_decimal}}</strong><strong>(2)</strong>
+            <strong class="text-success">{{ bin_decimal }}</strong><strong>(2)</strong>
             <br>
-            <strong class="text-success">{{sign}}0,{{fractional}}</strong><strong>(10)</strong>
+            <strong class="text-success">{{ sign }}0,{{ fractional }}</strong><strong>(10)</strong>
             ==
-            <strong class="text-success">0,{{bin_fractional}}</strong><strong>(2)</strong>
+            <strong class="text-success">0,{{ bin_fractional }}</strong><strong>(2)</strong>
             <br>
-            Alguns números não são perfeitamente convertiveis para binário, por isso eu converti
-            a nossa mantissa até chegar em <strong>23</strong> casas (a parte fracionária).
+            O resultado final ficou:
             <br>
-            O resultado final foi: <strong class="text-success">{{sign}}{{bin_decimal}},{{bin_fractional}}</strong>.
+            <strong class="text-success">{{ sign }}{{ bin_decimal }},{{ bin_fractional }}</strong>.
+          </p>
 
-            <hr>
-            Agora vamos passar isso para notação cientifica em base 2. Para isso só precisamos
-            mover a vírgula. Assim o resultado foi:
+          <hr>
+          <p class="mb-0 ms-1 me-1">
+            O próximo passo é passar para notação cientifica e isso é simples, praticamente só
+            precisamos mover a virgula e saber quantas casas ela andou para utilizar isso como
+            nosso expoente. Resultando em:
             <br>
             <strong class="text-success">
-              {{sign}}{{cientificNotation.decimal}},{{cientificNotation.fractional}} x 2^{{cientificNotation.exponent}}
+              {{ sign }}{{ cientificNotation.decimal }},{{ cientificNotation.fractional }} x
+              2^{{ cientificNotation.exponent }}
             </strong>
+          </p>
 
-            <hr>
-            Caso você chegou até aqui compreendendo tudo sem problemas, parabéns! Agora é só finalizarmos.
-            <br>
-            O bit de sinal é simples, se o número é positivo o bit é <strong>0</strong>, se é negativo o
-            bit é <strong>1</strong>.
-            <br>
-            O nosso fica: <strong class="text-success">{{ieee754.sign}}</strong>
-            <br>
-            O expoente é calculado no padrão <strong>Excesso de 127</strong>, logo é só somar 127 e converter
-            para binário.
-            <br>
-            O nosso fica: <strong class="text-success">{{ieee754.exponent}}</strong>
-            <br>
-            E a mantissa é a parte fracionária do número.
-            <br>
-            O nosso fica: <strong class="text-success">{{ieee754.mantissa}}</strong>
+          <hr>
 
-            <hr>
-            Agora só precisamos juntar esses 3 resultados e nós possuimos nosso número convertido para
-            <strong>Ponto Flutuante</strong>.
+          <p class="mb-0 ms-1 me-1">
+            Agora para finalizar, iremos realizar três simples etapas. Encontrar o bit de sinal, calcular o
+            expoente e por último a mantissa.
             <br>
-            <strong class="text-success">{{ieee754.sign}} {{ieee754.exponent}} {{ieee754.mantissa}}</strong>
-          </div>
+            O bit de sinal possui o valor <strong>0</strong> caso o número seja possitivo caso contrário
+            irá receber o valor <strong>1</strong>. O nosso resultado é:
+            <br>
+            <strong class="text-success">{{ ieee754.sign }}</strong>
+            <br>
+            Para calcularmos o expoente precisamos converter o valor do expoente para <strong>Excesso de
+            127</strong>, basta somar 127 ao nosso número e converter para binário. Nosso resultado ficou:
+            <br>
+            <strong class="text-success">{{ ieee754.exponent }}</strong>
+            <br>
+            A mantissa é simplesmente a parte fracionária do número. O nosso é:
+            <br>
+            <strong class="text-success">{{ ieee754.mantissa }}</strong>
+          </p>
+
+          <hr>
+
+          <p class="mb-0 ms-1 me-1">
+            Agora só precisamos juntar os 3 resultados e possuimos nosso número em <strong>Ponto
+            Flutuante</strong>, resultando em:
+            <br>
+            <strong class="text-success">{{ ieee754.sign }} {{ ieee754.exponent }} {{ ieee754.mantissa }}</strong>
+          </p>
+
+          <hr>
+
+          <p class="mb-0 ms-1 me-1">
+            Lembrando que nesse caso foi utilizado o padrão
+            <strong class="text-success">IEEE754 em Precisão Simples</strong>.
+          </p>
         </div>
-
-        <hr>
       </section>
     </article>
     <Footer></Footer>
@@ -168,13 +184,11 @@ export default {
     cientificPart() {
       if (this.bin_decimal.length > 1) {
         this.cientificPartNotZero();
-      }
-      else if (this.bin_decimal.toString().charAt(0) === '1') {
+      } else if (this.bin_decimal.toString().charAt(0) === '1') {
         this.cientificNotation.decimal = this.bin_decimal.toString();
         this.cientificNotation.fractional = this.bin_fractional.toString();
         this.cientificNotation.exponent = '0';
-      }
-      else {
+      } else {
         this.cientificPartZero();
       }
       this.calculateIEEE754();
