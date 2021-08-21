@@ -10,13 +10,10 @@ module.exports = {
         "moment": true
     },
     "extends": [
-        "plugin:vue/essential",
+        "plugin:vue/vue3-strongly-recommended",
+        "plugin:vue/vue3-recommended",
         "eslint:recommended"
     ],
-    "parserOptions": {
-        "parser": "babel-eslint",
-        "sourceType": "module"
-    },
     rules: {
         'no-console': 'off'
     }
