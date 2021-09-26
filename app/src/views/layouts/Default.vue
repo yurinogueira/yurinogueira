@@ -5,7 +5,7 @@
         <el-tabs v-model="menuChoice">
           <el-tab-pane
             label="Início"
-            name="home"
+            name="inicio"
           />
           <el-tab-pane
             label="Contato"
@@ -13,11 +13,11 @@
           />
           <el-tab-pane
             label="Projetos"
-            name="projects"
+            name="projetos"
           />
           <el-tab-pane
-            label="Alterações"
-            name="changelog"
+            label="EterniaServer"
+            name="eterniaserver"
           />
         </el-tabs>
       </el-header>
@@ -34,9 +34,6 @@
               :lg="24"
               :xl="24"
             >
-              <font-awesome-icon :icon="getFas('gem')" />
-              Contatos
-              &nbsp;
               <a
                 href="https://discordapp.com/users/228707634319065088"
                 class="me-5 text-reset"
@@ -77,7 +74,7 @@
             <el-col
               class="padding-on-top"
               :xs="24"
-              :sm="24"
+              :sm="12"
               :md="12"
               :lg="12"
               :xl="12"
@@ -94,7 +91,7 @@
             <el-col
               class="padding-on-top"
               :xs="24"
-              :sm="24"
+              :sm="12"
               :md="12"
               :lg="12"
               :xl="12"
@@ -161,7 +158,7 @@ library.add(
 export default {
   data() {
     return {
-      menuChoice: 'home'
+      menuChoice: 'inicio'
     };
   },
 
