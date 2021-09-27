@@ -17,17 +17,18 @@
           :gutter="20"
           justify="center"
         >
-          <el-col class="intern-card el-col-lg-4 el-col-sm-8 el-col-xs-12">
+          <el-col class="intern-card el-col-md-6 el-col-sm-8 el-col-xs-24">
             <el-avatar
               :size="200"
               :src="profilePicture.default"
             />
           </el-col>
-          <el-col class="intern-card el-col-lg-4 el-col-sm-8 el-col-xs-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Proin id nulla quis ex facilisis ullamcorper.
-            Curabitur vestibulum sapien sollicitudin lectus egestas, ultricies euismod dolor lobortis.
-            Cras congue orci eget ante pellentesque feugiat.
+          <el-col class="intern-card el-col-md-6 el-col-sm-8 el-col-xs-24">
+            Olá! Meu nome você já sabe, sou <strong>desenvolvedor</strong>,
+            <strong>estudante</strong> e <strong>pai</strong> <s>eta</s>.
+            <hr>
+            Sou fascinado por desenvolvimento Back-End e por linguagens POO
+            <s>e fortemente tipadas</s>.
           </el-col>
         </el-row>
       </el-card>
@@ -50,10 +51,14 @@ export default {
 </script>
 <style scoped>
 .about {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .intern-card {
   width: 200px;
+  height: auto;
   font-size: 16px;
+  padding-top: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 </style>
