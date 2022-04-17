@@ -50,15 +50,10 @@ const toast = () => {
 
   <p>
     Full Example:
-    <a
-      href="https://github.com/element-plus/element-plus-vite-starter"
-      target="_blank"
-    >element-plus-vite-starter</a>
+    <a href="https://github.com/element-plus/element-plus-vite-starter" target="_blank">element-plus-vite-starter</a>
     | On demand Example:
-    <a
-      href="https://github.com/element-plus/unplugin-element-plus"
-      target="_blank"
-    >unplugin-element-plus/examples/vite</a>
+    <a href="https://github.com/element-plus/unplugin-element-plus"
+      target="_blank">unplugin-element-plus/examples/vite</a>
   </p>
 </template>
 
