@@ -1,23 +1,21 @@
 <template>
-  <router-view />
+  <BaseHeader />
+  <div style="display: flex">
+    <BaseSide />
+    <div>
+      <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
+      <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
+    </div>
+  </div>
 </template>
 
 <style>
-* {
-  font-family: "Courier New", "Noto Sans", monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#app {
   text-align: center;
+  color: var(--el-text-color-primary);
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  font-size: 5vh;
-  font-weight: 700;
-  color: #08313a;
+.element-plus-logo {
+  width: 50%;
 }
 </style>

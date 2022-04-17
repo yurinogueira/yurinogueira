@@ -1,56 +1,28 @@
 {
-  "name": "app",
-  "version": "0.1.0",
+  "name": "element-plus-vite-starter",
   "private": true,
+  "version": "0.1.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "node scripts/gh-pages-deploy.js",
+    "preview": "vite preview",
+    "generate": "vite-ssg build",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "prerelease",
-    "@fortawesome/free-brands-svg-icons": "prerelease",
-    "@fortawesome/free-solid-svg-icons": "prerelease",
-    "@fortawesome/vue-fontawesome": "prerelease",
-    "core-js": "latest",
-    "dayjs": "latest",
-    "element-plus": "latest",
-    "vue": "next",
-    "vue-router": "next",
-    "vuex": "next"
+    "element-plus": "^2.1.9",
+    "vue": "^3.2.32"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "next",
-    "@vue/cli-plugin-eslint": "next",
-    "@vue/cli-plugin-vuex": "next",
-    "@vue/cli-service": "next",
-    "@vue/compiler-sfc": "latest",
-    "@babel/core": "latest",
-    "webpack": "latest",
-    "eslint": "latest",
-    "eslint-plugin-vue": "latest",
-    "sass": "latest",
-    "sass-loader": "7.3.1",
-    "vue-cli-plugin-element-plus": "latest"
+    "@types/node": "^17.0.24",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "sass": "^1.50.0",
+    "typescript": "^4.6.3",
+    "unplugin-vue-components": "^0.19.2",
+    "vite": "^2.9.1",
+    "vite-ssg": "^0.19.2",
+    "vue-tsc": "^0.34.6"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "license": "MIT"
 }
