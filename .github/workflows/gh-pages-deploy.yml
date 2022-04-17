@@ -3,21 +3,31 @@ on:
   push:
     branches:
       - main
+
 jobs:
-  gh-pages-deploy:
+  deploy:
     name: Deploying to Github Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: '12'
+          node-version: '16'
+
       - name: Install packages
         working-directory: ./app
-        run: yarn
-      - name: Set Creds
+        run: npm install
+
+      - name: Set Credentials
         working-directory: ./app
-        run: git config user.name "yurinogueira" && git config user.email "yurinogueira@id.uff.br"
+        env:
+          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+        run: git config user.name "$GIT_USERNAME" && git config user.email "$GIT_EMAIL"
+
       - name: Deploy
         working-directory: ./app
-        run: yarn deploy
+        run: npm run deploy
