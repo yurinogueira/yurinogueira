@@ -1,11 +1,9 @@
 <template>
+    <el-row class="top-row" justify="center">
+        <el-avatar :size="300" :src="image.default" />
+    </el-row>
     <el-row justify="center">
-        <el-col>
-            <el-avatar :size="200" :src="image.default" />
-        </el-col>
-        <el-col>
-            <WelcomeTitle msg="Yuri Nogueira" />
-        </el-col>
+        <h1>Yuri Nogueira</h1>
     </el-row>
 </template>
 
@@ -15,7 +13,13 @@ export default {
     data() {
         return {
             image: ProfileImage
-        };
+        }
     }
 }
 </script>
+
+<style scoped>
+.top-row {
+    margin-top: 10px;
+}
+</style>

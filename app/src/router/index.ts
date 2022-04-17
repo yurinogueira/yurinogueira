@@ -6,6 +6,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "Home",
         component: () => import("../views/HomePage.vue"),
     },
+    {
+        path: "/mic1",
+        name: "Mic1",
+        component: () => import("../views/MicSimulator.vue"),
+    },
 ];
 
 export default createRouter({
