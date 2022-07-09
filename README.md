@@ -1,79 +1,9 @@
-<table align="center">
-<tr>
-<th>yurinogueira.yurinogueira.YuriNogueira</th>
-<th>f_framework.h</th>
-<th>f_framework.c</th>
-</tr>
-<tr>
-<td style="width: 290px">
+## Opa, não me conhece? Prazer me chamo <strong>Yuri Nogueira</strong>!
 
-```java
-public class YuriNogueira {
+> Desenvolvedor Back-end apaixonado em OOP, otimização e, por ultimo, mas não menos importante, um eterno estudante!
 
-    public static void main(String[] args) {
-       var app = new AdditionApplication();
-       var server = new GatewayServer(app);
-       server.start();
-    }
+## :thumbsup: Links úteis
 
-    public String getName() {
-        return "Yuri Nogueira";
-    }
-
-    public String[] getFavoriteLanguages() {
-        return {"C", "Java", "Python"};
-    }
-}
-```
-
-</td>
-<td>
-
-```h
-// Returns the favorite framework
-char* f_framework();
-```
-
-</td>
-</td>
-<td>
-
-```c
-char* f_framework()
-{
-    return "Django";
-}
-```
-
-</td>
-</tr>
-
-<tr>
-<th colspan="3">views</th>
-</tr>
-<tr>
-<td colspan="3">
-
-```python
-class YuriNogueiraAPIView(APIView):
-    java_gateway_class = JavaGateway
-    ctype_class = CDLL
-
-    def java_instance(self):
-        gateway = self.java_gateway_class()
-        return gateway.yurinogueira.yurinogueira.YuriNogueira()
-
-    def c_loader(self):
-        libname = pathlib.Path().absolute()
-        return self.ctype_class(libname)
-
-    def get(self, request):
-        method = request.data["method"]
-        instance = self.java_instance() if method != "f_framework" else c_loader()
-
-        return Response(getattr(instance, method), status=HTTP_200_OK)
-```
-
-</td>
-</tr>
-</table>
+[<img src="https://img.shields.io/badge/GitHub-Pessoal-green?style=for-the-badge&logo=github">](https://github.com/yurinogueira)
+[<img src="https://img.shields.io/badge/GitHub-EterniaServer-1166BB?style=for-the-badge&logo=github">](https://github.com/EterniaServer)
+[<img src="https://img.shields.io/badge/LinkedIn-Yuri%20Nogueira-blue?style=for-the-badge&logo=linkedin">](https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva/)
