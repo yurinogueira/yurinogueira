@@ -65,7 +65,7 @@ p {
 }
 
 .about {
-  background-color: #00b24a;
+  background-color: #006928;
 }
 
 .about p {

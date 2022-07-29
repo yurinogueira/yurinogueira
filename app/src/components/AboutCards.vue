@@ -2,16 +2,16 @@
   <el-row class="cards-container" :gutter="12">
     <el-col class="backend-card" :md="{span: 8}" :span="24">
       <el-image class="cards-logo" alt="Icone Desenvolvedor Back-End" :src="terminalIcon.default"></el-image>
-      <h3>Desenvolvedor Back-End</h3>
+      <h2 class="cards-title">Desenvolvedor Back-End</h2>
       <p class="cards-text">
         <br/>
         Aprecio uma estrutura bem feita e um código simples sempre tendo
         em mente explicito é melhor que implicito.
       </p>
     </el-col>
-    <el-col class="student-card" alt="Icone Estudante" :md="{span: 8}" :span="24">
-      <el-image class="cards-logo" :src="bookIcon.default"></el-image>
-      <h3>Estudante</h3>
+    <el-col class="student-card" :md="{span: 8}" :span="24">
+      <el-image class="cards-logo" alt="Icone Estudante" :src="bookIcon.default"></el-image>
+      <h2 class="cards-title">Estudante</h2>
       <p class="cards-text">
         <br/>
         <q>O mais sábio é aquele que sabe que não sabe.</q> <cite>Sócrates</cite>
@@ -19,9 +19,9 @@
         Levo isso para a vida e procuro sempre aprender algo novo.
       </p>
     </el-col>
-    <el-col class="father-card" alt="Icone Pai" :md="{span: 8}" :span="24">
-      <el-image class="cards-logo" :src="fatherIcon.default"></el-image>
-      <h3>Pai</h3>
+    <el-col class="father-card" :md="{span: 8}" :span="24">
+      <el-image class="cards-logo" alt="Icone Pai" :src="fatherIcon.default"></el-image>
+      <h2 class="cards-title">Pai</h2>
       <p class="cards-text">
         <br/>
         Ser pai é desafiador, é necessário ter responsabilidade e esse é
@@ -67,6 +67,10 @@ export default defineComponent({
 
 .cards-text {
   font-size: 16px;
+}
+
+.cards-title {
+  font-size: 20px;
 }
 
 .backend-card {
