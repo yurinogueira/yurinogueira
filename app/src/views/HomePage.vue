@@ -10,7 +10,7 @@
     </el-col>
   </el-row>
   <el-row justify="center">
-    <el-image class="home-image" :src="backHomeImage.default"></el-image>
+    <el-image class="home-image" alt="Imagem de Fundo" :src="backHomeImage.default"></el-image>
   </el-row>
   <el-row class="about" justify="center">
     <p class="about-text-box">
@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import * as BackHomeImage from "../assets/backHomeImage.png";
+import * as BackHomeImage from "../assets/backHomeImage.webp";
 import AboutCards from "../components/AboutCards.vue";
 
 export default {

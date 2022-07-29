@@ -1,7 +1,7 @@
 <template>
   <el-row class="cards-container" :gutter="12">
-    <el-col class="first-card" :md="{span: 8}" :span="24">
-      <el-image class="cards-logo" :src="terminalIcon.default"></el-image>
+    <el-col class="backend-card" :md="{span: 8}" :span="24">
+      <el-image class="cards-logo" alt="Icone Desenvolvedor Back-End" :src="terminalIcon.default"></el-image>
       <h3>Desenvolvedor Back-End</h3>
       <p class="cards-text">
         <br/>
@@ -9,7 +9,7 @@
         em mente explicito é melhor que implicito.
       </p>
     </el-col>
-    <el-col class="second-card" :md="{span: 8}" :span="24">
+    <el-col class="student-card" alt="Icone Estudante" :md="{span: 8}" :span="24">
       <el-image class="cards-logo" :src="bookIcon.default"></el-image>
       <h3>Estudante</h3>
       <p class="cards-text">
@@ -19,7 +19,7 @@
         Levo isso para a vida e procuro sempre aprender algo novo.
       </p>
     </el-col>
-    <el-col class="third-card" :md="{span: 8}" :span="24">
+    <el-col class="father-card" alt="Icone Pai" :md="{span: 8}" :span="24">
       <el-image class="cards-logo" :src="fatherIcon.default"></el-image>
       <h3>Pai</h3>
       <p class="cards-text">
@@ -35,9 +35,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import * as TerminalIcon from "../assets/terminalIcon.png";
-import * as BookIcon from "../assets/bookIcon.png";
-import * as FatherIcon from "../assets/fatherIcon.png";
+import * as TerminalIcon from "../assets/terminalIcon.webp";
+import * as BookIcon from "../assets/bookIcon.webp";
+import * as FatherIcon from "../assets/fatherIcon.webp";
 
 export default defineComponent({
   name: "AboutCards",
@@ -69,16 +69,16 @@ export default defineComponent({
   font-size: 16px;
 }
 
-.first-card {
+.backend-card {
   width: 100%;
 }
 
-.second-card {
+.student-card {
   width: 100%;
   border-left: 1px solid #1d1e1f;
 }
 
-.third-card {
+.father-card {
   width: 100%;
   border-left: 1px solid #1d1e1f;
 }
@@ -90,11 +90,11 @@ export default defineComponent({
 }
 
 @media (max-width: 991px) {
-  .second-card {
+  .student-card {
     border-top: 1px solid #1d1e1f;
     border-left: 0;
   }
-  .third-card {
+  .father-card {
     border-top: 1px solid #1d1e1f;
     border-left: 0;
   }
