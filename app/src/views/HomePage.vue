@@ -1,5 +1,5 @@
 <template>
-  <el-row class="top-row" justify="center">
+  <el-row justify="center">
     <el-col :span="24">
       <h1>Desenvolvedor Back-End, Estudante & Pai</h1>
       <p>
@@ -52,16 +52,12 @@ export default {
 <style scoped>
 
 h1 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 p {
   margin-top: -16px;
   font-size: 20px;
-}
-
-.top-row {
-  margin-top: 10px;
 }
 
 .about {

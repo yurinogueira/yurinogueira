@@ -1,8 +1,9 @@
 <template>
   <base-header></base-header>
   <el-config-provider :locale="locale">
-    <RouterView />
+    <router-view />
   </el-config-provider>
+  <base-footer></base-footer>
 </template>
 
 
@@ -12,10 +13,12 @@ import { ElConfigProvider } from "element-plus";
 
 import ptBr from "element-plus/lib/locale/lang/pt-br";
 import BaseHeader from "~/layouts/BaseHeader.vue";
+import BaseFooter from "~/layouts/BaseFooter.vue";
 
 export default defineComponent({
   components: {
     BaseHeader,
+    BaseFooter,
     ElConfigProvider,
   },
   setup() {

@@ -1,10 +1,10 @@
 <template>
-  <el-row justify="space-between">
+  <el-row class="header-row" justify="space-between">
     <el-col :span="12">
       <el-image class="logo" alt="Logo" :src="siteLogo.default"></el-image>
     </el-col>
-    <el-col :span="12" class="fala-tu-button">
-      <el-button type="success" round plain>
+    <el-col :span="12">
+      <el-button class="fala-tu-button" type="success" round plain>
         Fala Tu
       </el-button>
     </el-col>
@@ -27,11 +27,16 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.header-row {
+  margin-bottom: 8px;
+}
+
 .logo {
   width: 72px;
 }
 
 .fala-tu-button {
   margin-top: 20px;
+  width: 32px;
 }
 </style>
