@@ -2,13 +2,13 @@
   <el-row class="footer-row" justify="center">
     <p class="footer-text">
       <el-row :gutter="12" justify="center">
-        <el-col :xs="{span: 24}" :span="12">
+        <el-col :xs="{span: 24}" :span="6">
           <el-button :onclick="openGitHub" class="button-size" round>
             <font-awesome-icon class="brand-size" icon="fa-brands fa-github"/>
             <b>GitHub</b>
           </el-button>
         </el-col>
-        <el-col :xs="{span: 24}" :span="12">
+        <el-col :xs="{span: 24}" :span="6">
           <el-button :onclick="openLinkedIn" class="button-size" round>
             <font-awesome-icon class="brand-size" icon="fa-brands fa-linkedin-in"/>
             <b>LinkedIn</b>
@@ -41,17 +41,16 @@ export default defineComponent({
 
 <style scoped>
 .footer-row {
-  margin-top: 64px;
   background-color: #006928;
 }
 
 .footer-text {
+  width: 1100px;
   margin-top: 64px;
   margin-bottom: 64px;
 }
 
 .button-size {
-  margin-top: 8px;
   height: 48px;
   width: 128px;
 }
@@ -60,4 +59,17 @@ export default defineComponent({
   width: 48px;
   height: 32px;
 }
+
+@media (max-width: 1200px) {
+  .footer-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    width: 95%;
+  }
+}
+
 </style>

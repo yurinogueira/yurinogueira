@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Expeer",
+    "label": "Expeer",
+    "description": "A Expeer é uma plataforma online que tem como objetivo conectar investidores a oportunidades de investimentos no setor imobiliário através de ferramentas inovadoras e exclusivas, dentro de um ambiente seguro, tecnológico e transparente.",
+    "image": {
+      "src": "/images/expeer.webp",
+      "alt": "Expeer Plataforma"
+    },
+    "links": [
+      {
+        "url": "https://app.expeer.com.br/",
+        "name": "Plataforma"
+      }
+    ]
+  },
+  {
+    "name": "EterniaServer",
+    "label": "EterniaServer",
+    "description": "O EterniaServer é um servidor de minecraft modo sobrevivência com o foco em proporcionar a melhor e mais polida experiência, de maneira autêntica com códigos feitos sobe medida para o próprio servidor.",
+    "image": {
+      "src": "/images/eternia.webp",
+      "alt": "EterniaServer Minecraft"
+    },
+    "links": [
+      {
+        "url": "https://eterniaserver.com.br/",
+        "name": "Site"
+      },
+      {
+        "url": "https://github.com/eterniaserver/",
+        "name": "Código fonte"
+      }
+    ]
+  }
+]

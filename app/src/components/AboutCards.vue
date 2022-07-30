@@ -1,6 +1,6 @@
 <template>
   <el-row class="cards-container" :gutter="12">
-    <el-col class="backend-card" :md="{span: 8}" :span="24">
+    <el-col :md="{span: 8}" :span="24">
       <el-image class="cards-logo" alt="Icone Desenvolvedor Back-End" :src="terminalIcon.default"></el-image>
       <h2 class="cards-title">Desenvolvedor Back-End</h2>
       <p class="cards-text">
@@ -9,7 +9,7 @@
         em mente explicito é melhor que implicito.
       </p>
     </el-col>
-    <el-col class="student-card" :md="{span: 8}" :span="24">
+    <el-col :md="{span: 8}" :span="24">
       <el-image class="cards-logo" alt="Icone Estudante" :src="bookIcon.default"></el-image>
       <h2 class="cards-title">Estudante</h2>
       <p class="cards-text">
@@ -19,7 +19,7 @@
         Levo isso para a vida e procuro sempre aprender algo novo.
       </p>
     </el-col>
-    <el-col class="father-card" :md="{span: 8}" :span="24">
+    <el-col :md="{span: 8}" :span="24">
       <el-image class="cards-logo" alt="Icone Pai" :src="fatherIcon.default"></el-image>
       <h2 class="cards-title">Pai</h2>
       <p class="cards-text">
@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 import * as TerminalIcon from "../assets/terminalIcon.webp";
 import * as BookIcon from "../assets/bookIcon.webp";
@@ -54,10 +54,15 @@ export default defineComponent({
 <style scoped>
 
 .cards-container {
-  width: 1000px;
+  width: 1100px;
   background-color: #0a0a0a;
   border-radius: 20px;
   border: 1px solid #1d1e1f;
+}
+
+.cards-container .el-col:not(:first-child) {
+  width: 100%;
+  border-left: 1px solid #1d1e1f;
 }
 
 .cards-logo {
@@ -73,20 +78,6 @@ export default defineComponent({
   font-size: 20px;
 }
 
-.backend-card {
-  width: 100%;
-}
-
-.student-card {
-  width: 100%;
-  border-left: 1px solid #1d1e1f;
-}
-
-.father-card {
-  width: 100%;
-  border-left: 1px solid #1d1e1f;
-}
-
 @media (max-width: 1200px) {
   .cards-container {
     width: 80%;
@@ -94,11 +85,7 @@ export default defineComponent({
 }
 
 @media (max-width: 991px) {
-  .student-card {
-    border-top: 1px solid #1d1e1f;
-    border-left: 0;
-  }
-  .father-card {
+  .cards-container .el-col:not(:first-child) {
     border-top: 1px solid #1d1e1f;
     border-left: 0;
   }
