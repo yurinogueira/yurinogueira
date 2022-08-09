@@ -53,7 +53,7 @@ export default {
       window.open("https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva/", "_blank");
     },
     sendToEmail() {
-      window.open("mailto:yurinogueira@id.uff.br?subject=Oi!%20vim%20pelo%20seu%20site!", target="_blank");
+      window.open("mailto:yurinogueira@id.uff.br?subject=Oi!%20vim%20pelo%20seu%20site!", "_blank");
     }
   },
 }
