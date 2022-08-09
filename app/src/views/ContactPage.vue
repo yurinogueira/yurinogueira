@@ -16,7 +16,7 @@
     </el-col>
     <el-col class="contacts-box" :span="24">
       <el-button :onclick="openLinkedIn" type="success" round>
-        <font-awesome-icon class="brand-size" icon="fa-brands fa-whatsapp"/>
+        <font-awesome-icon class="brand-size" icon="fa-brands fa-linkedin-in"/>
         <b>LinkedIn</b>
       </el-button>
     </el-col>
@@ -110,7 +110,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 416px) {
   .el-button {
     width: 256px;
   }

@@ -83,6 +83,14 @@ export default defineComponent({
   .footer-text {
     width: 95%;
   }
+  .button-size {
+    width: 384px;
+  }
 }
 
+@media (max-width: 416px) {
+  .button-size {
+    width: 256px;
+  }
+}
 </style>
