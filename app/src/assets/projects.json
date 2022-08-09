@@ -32,5 +32,24 @@
         "name": "Código fonte"
       }
     ]
+  },
+  {
+    "name": "YuriNogueira",
+    "label": "Yuri Nogueira Portfólio",
+    "description": "Um site PWA simples e direto, com o objetivo de demonstrar um pouco do meu portfólio. Site feito seguindo as boas práticas de modo com que a manutenção seja simples e rápida.",
+    "image": {
+      "src": "/images/yurinogueira.webp",
+      "alt": "Yuri Nogueira Portfólio"
+    },
+    "links": [
+      {
+        "url": "https://yurinogueira.dev.br/",
+        "name": "Site"
+      },
+      {
+        "url": "https://github.com/yurinogueira/yurinogueira/",
+        "name": "Código fonte"
+      }
+    ]
   }
 ]

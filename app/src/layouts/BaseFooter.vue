@@ -14,6 +14,12 @@
             <b>LinkedIn</b>
           </el-button>
         </el-col>
+        <el-col :xs="{span: 24}" :span="6">
+          <el-button :onclick="goToFalaTu" class="button-size" round>
+            <font-awesome-icon class="brand-size" icon="fa-solid fa-address-book"/>
+            <b>Contatos</b>
+          </el-button>
+        </el-col>
       </el-row>
       <br/>
       <br/>
@@ -34,24 +40,31 @@ export default defineComponent({
     },
     openLinkedIn() {
       window.open("https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva/", "_blank");
+    },
+    goToFalaTu() {
+      this.$router.push({ path: "/fala-tu" });
     }
   }
 })
 </script>
 
 <style scoped>
+.el-col {
+  margin-top: 8px;
+}
+
 .footer-row {
   background-color: #006928;
 }
 
 .footer-text {
   width: 1100px;
-  margin-top: 64px;
+  margin-top: 48px;
   margin-bottom: 64px;
 }
 
 .button-size {
-  height: 48px;
+  height: 56px;
   width: 128px;
 }
 
