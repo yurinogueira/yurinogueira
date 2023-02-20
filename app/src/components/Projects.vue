@@ -28,7 +28,7 @@ export default defineComponent({
   name: "Projects",
   data() {
     return {
-      activeName: ref("Expeer"),
+      activeName: ref("Siteware"),
       projectsData: projectsJson
     }
   }
