@@ -1,14 +1,14 @@
 <template>
-  <el-tabs v-model="activeName" class="projects-tab" @tab-click="handleClick">
-    <el-tab-pane v-for="project in projectsData" :name="project.name">
+  <el-tabs v-model="activeName" class="projects-tab">
+    <el-tab-pane v-for="project in projectsData" :name="project.title" :tabindex="project.index" :id="project.index">
       <template #label><span class="project-label"><b>{{ project.label }}</b></span></template>
       <el-row class="project-tab-row" :gutter="12">
         <el-col :md="{span: 12}" :span="24">
           <p>{{project.description}}</p>
-          <div v-if="project.links" v-for="link in project.links">
+          <div v-if="project.links" v-for="link in project.links" :id="link.index">
             <br/>
             <el-link :href="link.url" target="_blank">
-              {{ link.name }}
+              {{ link.title }}
             </el-link>
           </div>
         </el-col>
@@ -22,7 +22,6 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import type { TabsPaneContext } from "element-plus";
 import projectsJson from "../assets/projects.json";
 
 export default defineComponent({
@@ -31,11 +30,6 @@ export default defineComponent({
     return {
       activeName: ref("Expeer"),
       projectsData: projectsJson
-    }
-  },
-  methods: {
-    handleClick(tab: TabsPaneContext, event: Event) {
-      console.log(tab, event)
     }
   }
 });

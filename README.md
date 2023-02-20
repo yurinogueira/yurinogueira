@@ -1,3 +1,4 @@
+
 ## Opa, não me conhece? Prazer me chamo <strong>Yuri Nogueira</strong>!
 
 > Desenvolvedor Back-end apaixonado em OOP, otimização e, por ultimo, mas não menos importante, um eterno estudante!

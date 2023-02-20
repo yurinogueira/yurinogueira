@@ -9,10 +9,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faAt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faAddressBook, faAt, faDownload } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faLinkedinIn, faAddressBook, faWhatsapp, faAt)
+library.add(faGithub, faLinkedinIn, faAddressBook, faDownload, faAt)
 
 import "~/styles/index.scss";
 

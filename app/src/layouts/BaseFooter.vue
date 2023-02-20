@@ -39,7 +39,7 @@ export default defineComponent({
       window.open("https://github.com/yurinogueira/", "_blank");
     },
     openLinkedIn() {
-      window.open("https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva/", "_blank");
+      window.open("https://www.linkedin.com/in/yurinmds/", "_blank");
     },
     goToFalaTu() {
       this.$router.push({ path: "/fala-tu" });

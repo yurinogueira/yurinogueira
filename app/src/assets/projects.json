@@ -1,8 +1,26 @@
 [
   {
-    "name": "Expeer",
-    "label": "Expeer",
-    "description": "A Expeer é uma plataforma online que tem como objetivo conectar investidores a oportunidades de investimentos no setor imobiliário através de ferramentas inovadoras e exclusivas, dentro de um ambiente seguro, tecnológico e transparente.",
+    "title": "Siteware",
+    "label": "Siteware - Valorae",
+    "index": 0,
+    "description": "Responsável pela manutenção da plataforma de gestão Valorae, utilizando principalmente as seguintes tecnologias: Java, Spring Framework, Javascript, AngularJS, MySQL, MongoDB, Linux, Maven e Docker. Como destaque consegui realizar diversas otimizações e reduções de custo em áreas da plataforma que tornaram o uso do Valorae muito mais agradável. Experiência de trabalho em equipe e trabalho remoto bem sucedido.",
+    "image": {
+      "src": "/images/valorae.webp",
+      "alt": "Siteware Valorae"
+    },
+    "links": [
+      {
+        "url": "https://app.valorae.com.br/",
+        "title": "Plataforma",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "title": "Expeer",
+    "label": "Expeer - P2P",
+    "index": 1,
+    "description": "Responsável pela manutenção, design e desenvolvimento do back-end e da infra-estrutura de uma plataforma para investimentos, utilizando principalmente as seguintes tecnologias: Python, Django, Django REST Framework, FastAPI, PostgreSQL, AWS, Redis, ElasticSearch e Docker. Como destaque atualizei e implementei uma nova CI/CD que possibilitou agilizar o desenvolvimento juntamento com o desenvolvimento de novos projetos e refatoração de código que trouxe uma melhor experiência de utilização da plataforma. Experiência de autogestão e trabalho remoto bem sucedido.",
     "image": {
       "src": "/images/expeer.webp",
       "alt": "Expeer Plataforma"
@@ -10,14 +28,16 @@
     "links": [
       {
         "url": "https://app.expeer.com.br/",
-        "name": "Plataforma"
+        "title": "Plataforma",
+        "index": 0
       }
     ]
   },
   {
-    "name": "EterniaServer",
+    "title": "EterniaServer",
     "label": "EterniaServer",
-    "description": "O EterniaServer é um servidor de minecraft modo sobrevivência com o foco em proporcionar a melhor e mais polida experiência, de maneira autêntica com códigos feitos sobe medida para o próprio servidor.",
+    "index": 2,
+    "description": "Desenvolvedor e fundador de plugins e de um servidor de minecraft. Responsável por toda a manutenção, criação, design e planejamento, utilizando principalmente tecnologias como Java, Maven, Gradle, MySQL, MariaDB, Linux e Docker. Como destaque cnseguir criar uma comunidade de mais de 300 usuários, com uma média de 50 usuários ativos por dia que jogavam e ajudavam com os custos do servidor. Experiência de empreendedorismo e inovação bem sucedida.",
     "image": {
       "src": "/images/eternia.webp",
       "alt": "EterniaServer Minecraft"
@@ -25,18 +45,21 @@
     "links": [
       {
         "url": "https://eterniaserver.com.br/",
-        "name": "Site"
+        "title": "Site",
+        "index": 0
       },
       {
         "url": "https://github.com/eterniaserver/",
-        "name": "Código fonte"
+        "title": "Código fonte",
+        "index": 1
       }
     ]
   },
   {
-    "name": "YuriNogueira",
+    "title": "YuriNogueira",
     "label": "Yuri Nogueira Portfólio",
-    "description": "Um site PWA simples e direto, com o objetivo de demonstrar um pouco do meu portfólio. Site feito seguindo as boas práticas de modo com que a manutenção seja simples e rápida.",
+    "index": 3,
+    "description": "Um site PWA simples e direto, com o objetivo de demonstrar um pouco do meu portfólio. Site feito utiization Vue e Typescript seguindo as boas práticas de modo com que a manutenção seja simples e rápida.",
     "image": {
       "src": "/images/yurinogueira.webp",
       "alt": "Yuri Nogueira Portfólio"
@@ -44,11 +67,13 @@
     "links": [
       {
         "url": "https://yurinogueira.dev.br/",
-        "name": "Site"
+        "title": "Site",
+        "index": 0
       },
       {
         "url": "https://github.com/yurinogueira/yurinogueira/",
-        "name": "Código fonte"
+        "title": "Código fonte",
+        "index": 1
       }
     ]
   }

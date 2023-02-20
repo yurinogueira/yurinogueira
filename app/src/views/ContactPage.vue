@@ -9,9 +9,9 @@
   </el-row>
   <el-row justify="center">
     <el-col class="contacts-box" :span="24">
-      <el-button :onclick="openWhatsApp" type="success" round>
-        <font-awesome-icon class="brand-size" icon="fa-brands fa-whatsapp"/>
-        <b>WhatsApp</b>
+      <el-button :onclick="downloadCurriculum" type="success" round>
+        <font-awesome-icon class="brand-size" icon="fa-solid fa-download"/>
+        <b>Curriculum</b>
       </el-button>
     </el-col>
     <el-col class="contacts-box" :span="24">
@@ -37,25 +37,22 @@
 
 <script>
 export default {
-  name: "ContactPage",
+    name: "ContactPage",
 
-  methods: {
-    openWhatsApp() {
-      window.open(
-          "https://wa.me/+5521967860952?text=Oi!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar!",
-          "_blank",
-      );
+    methods: {
+        downloadCurriculum() {
+            window.open("/docs/curriculum-pt.pdf", "_blank",);
+        },
+        openGitHub() {
+            window.open("https://github.com/yurinogueira/", "_blank");
+        },
+        openLinkedIn() {
+            window.open("https://www.linkedin.com/in/yurinmds/", "_blank");
+        },
+        sendToEmail() {
+            window.open("mailto:yurinogueira@id.uff.br?subject=Oi!%20vim%20pelo%20seu%20site!", "_blank");
+        }
     },
-    openGitHub() {
-      window.open("https://github.com/yurinogueira/", "_blank");
-    },
-    openLinkedIn() {
-      window.open("https://www.linkedin.com/in/yuri-nogueira-moreira-da-silva/", "_blank");
-    },
-    sendToEmail() {
-      window.open("mailto:yurinogueira@id.uff.br?subject=Oi!%20vim%20pelo%20seu%20site!", "_blank");
-    }
-  },
 }
 </script>
 
