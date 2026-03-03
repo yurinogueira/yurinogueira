@@ -31,12 +31,12 @@ export default defineComponent({
 
 <style>
 html, body {
-  background-color: #0a0a0a;
+  background-color: #0F0F0F;
 }
 
 #app {
   text-align: center;
-  color: antiquewhite;
+  color: #f8f8f8;
 }
 
 a {

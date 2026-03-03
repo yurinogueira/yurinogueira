@@ -56,7 +56,7 @@ p {
 
 .project-label {
   font-size: 16px;
-  color: antiquewhite;
+  color: #f8f8f8;
 }
 
 @media (max-width: 1200px) {

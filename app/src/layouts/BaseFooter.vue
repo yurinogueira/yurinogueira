@@ -23,7 +23,7 @@
       </el-row>
       <br/>
       <br/>
-      Copyright © 2022 <b>Yuri Nogueira Moreira da Silva</b>
+      Copyleft 🄯 {{ currentYear }} <b>Yuri Nogueira Moreira da Silva</b>
     </p>
   </el-row>
 </template>
@@ -33,6 +33,12 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: "BaseFooter",
+
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    }
+  },
 
   methods: {
     openGitHub() {
@@ -54,7 +60,7 @@ export default defineComponent({
 }
 
 .footer-row {
-  background-color: #006928;
+  background-color: #191d1e;
 }
 
 .footer-text {

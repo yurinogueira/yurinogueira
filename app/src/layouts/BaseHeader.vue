@@ -3,7 +3,7 @@
     <el-row class="header-row" justify="space-between">
       <el-col :span="4">
         <router-link to="/">
-          <el-image alt="Logo" :src="siteLogo.default"></el-image>
+          <el-image alt="Logo" :src="siteLogo.default" draggable="false"></el-image>
         </router-link>
       </el-col>
       <el-col :span="4">
