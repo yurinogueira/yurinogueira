@@ -11,7 +11,7 @@
 import { defineComponent } from "vue";
 import { ElConfigProvider } from "element-plus";
 
-import ptBr from "element-plus/lib/locale/lang/pt-br";
+import ptBr from "element-plus/es/locale/lang/pt-br";
 import BaseHeader from "~/layouts/BaseHeader.vue";
 import BaseFooter from "~/layouts/BaseFooter.vue";
 
