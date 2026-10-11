@@ -10,9 +10,35 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faAt, faDownload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAddressBook,
+  faAt,
+  faDownload,
+  faCode,
+  faCubesStacked,
+  faBolt,
+  faArrowLeft,
+  faArrowRight,
+  faBriefcase,
+  faCircleCheck,
+  faUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faLinkedinIn, faAddressBook, faDownload, faAt)
+library.add(
+  faGithub,
+  faLinkedinIn,
+  faAddressBook,
+  faDownload,
+  faAt,
+  faCode,
+  faCubesStacked,
+  faBolt,
+  faArrowLeft,
+  faArrowRight,
+  faBriefcase,
+  faCircleCheck,
+  faUpRightFromSquare
+);
 
 import "~/styles/index.scss";
 

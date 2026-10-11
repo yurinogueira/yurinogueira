@@ -1,9 +1,83 @@
 [
   {
-    "title": "Siteware",
-    "label": "Siteware - Valorae",
+    "id": "siteware-stratws",
+    "title": "Siteware Stratws",
+    "label": "Siteware - Stratws",
     "index": 0,
-    "description": "Responsável pela manutenção da plataforma de gestão Valorae, utilizando principalmente as seguintes tecnologias: Java, Spring Framework, Javascript, AngularJS, MySQL, MongoDB, Linux, Maven e Docker. Como destaque consegui realizar diversas otimizações e reduções de custo em áreas da plataforma que tornaram o uso do Valorae muito mais agradável. Experiência de trabalho em equipe e trabalho remoto bem sucedido.",
+    "company": "Siteware",
+    "role": "Engenheiro de Software",
+    "period": "Setembro 2022 – Atual",
+    "description": "Atuação no desenvolvimento e evolução do Stratws, plataforma líder em governança e gestão estratégica corporativa. Responsável pela modernização arquitetural com migração do .NET Framework para .NET 10, criação de novos serviços e sustentação de sistemas de missão crítica.",
+    "overview": "O Stratws é uma robusta plataforma corporativa utilizada por organizações de grande porte para desdobramento de metas, gestão de KPIs, planos de ação e governança estratégica. A atuação técnica abrange desde a modernização de ecossistemas legados de alto volume até a concepção e entrega de novos microsserviços modernos, de alta confiabilidade e escalabilidade.",
+    "responsibilities": [
+      "Liderança e execução na modernização de serviços estratégicos, atuando na migração de código legado em .NET Framework para as versões mais recentes (.NET 10).",
+      "Arquitetura, modelagem e desenvolvimento de novos microsserviços e APIs com foco em baixo acoplamento e resiliência.",
+      "Manutenção e evolução de fluxos críticos de alta disponibilidade, throughput elevado e integridade transacional.",
+      "Otimização contínua de consultas e rotinas em bancos de dados relacionais e não relacionais.",
+      "Participação em definições arquiteturais, code reviews e disseminação de boas práticas de Clean Architecture e testes automatizados."
+    ],
+    "highlights": [
+      "Condução técnica da modernização tecnológica de ecossistemas .NET Framework para .NET 10, viabilizando ganhos expressivos de performance e manutenibilidade.",
+      "Desenvolvimento de novos serviços modulares que ampliaram a capacidade de integração e processamento da plataforma.",
+      "Redução de débito técnico em áreas estratégicas com impacto direto na estabilidade e velocidade de resposta da aplicação corporativa."
+    ],
+    "techStack": [
+      ".NET 10",
+      ".NET Framework",
+      "C#",
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "MySQL",
+      "Docker",
+      "Kubernetes",
+      "Microsserviços",
+      "CI/CD"
+    ],
+    "image": {
+      "src": "/images/stratws.webp",
+      "alt": "Siteware Stratws"
+    },
+    "links": [
+      {
+        "url": "https://www.siteware.com.br/stratws-one/",
+        "title": "Plataforma Stratws",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": "siteware-valorae",
+    "title": "Siteware Valorae",
+    "label": "Siteware - Valorae",
+    "index": 1,
+    "company": "Siteware",
+    "role": "Engenheiro de Software",
+    "period": "Setembro 2022 – Atual",
+    "description": "Responsável pela engenharia e sustentação da plataforma de gestão Valorae, gerando impactos diretos com otimizações de performance, refatorações estratégicas e reduções substanciais de custos de infraestrutura.",
+    "overview": "A plataforma Valorae oferece gestão ágil de objetivos, rituais e acompanhamento de pessoas. No projeto, o foco foi a modernização de rotinas pesadas, migração para fluxos mais eficientes e estabilidade do ecossistema.",
+    "responsibilities": [
+      "Refatoração de módulos legados para arquitetura limpa e testes automatizados.",
+      "Manutenção e criação de serviços backend integrados com bancos relacionais e NoSQL.",
+      "Otimizações de queries e indexação que elevaram a agilidade das telas e relatórios.",
+      "Trabalho remoto colaborativo com times de produto, qualidade e infraestrutura."
+    ],
+    "highlights": [
+      "Diversas otimizações de banco e consumo de memória que tornaram o uso da plataforma sensivelmente mais rápido.",
+      "Redução relevante em custos operacionais e de processamento em nuvem.",
+      "Consolidação de padrões de engenharia modernos no projeto."
+    ],
+    "techStack": [
+      "Java",
+      "Spring Framework",
+      "MySQL",
+      "MongoDB",
+      "Javascript",
+      "AngularJS",
+      "Docker",
+      "Maven",
+      "Linux"
+    ],
     "image": {
       "src": "/images/valorae.webp",
       "alt": "Siteware Valorae"
@@ -11,55 +85,79 @@
     "links": [
       {
         "url": "https://app.valorae.com.br/",
-        "title": "Plataforma",
+        "title": "Acessar Valorae",
         "index": 0
       }
     ]
   },
   {
+    "id": "expeer",
     "title": "Expeer",
     "label": "Expeer - P2P",
-    "index": 1,
-    "description": "Responsável pela manutenção, design e desenvolvimento do back-end e da infra-estrutura de uma plataforma para investimentos, utilizando principalmente as seguintes tecnologias: Python, Django, Django REST Framework, FastAPI, PostgreSQL, AWS, Redis, ElasticSearch e Docker. Como destaque atualizei e implementei uma nova CI/CD que possibilitou agilizar o desenvolvimento juntamento com o desenvolvimento de novos projetos e refatoração de código que trouxe uma melhor experiência de utilização da plataforma. Experiência de autogestão e trabalho remoto bem sucedido.",
+    "index": 2,
+    "company": "Expeer (Paramis Capital)",
+    "role": "Engenheiro de Software / Desenvolvedor",
+    "period": "Março 2021 – Agosto 2022",
+    "description": "Engenharia de software e infraestrutura da Expeer, fintech de crowdfunding de investimentos e crédito peer-to-peer (P2P) fundada pela gestora Paramis Capital. Implementação de microsserviços, pipeline de CI/CD automatizado e alta segurança para transações financeiras.",
+    "overview": "A Expeer nasceu como uma inovadora fintech de corporate venture fundada pela gestora de investimentos Paramis Capital, atuando na conexão direta entre investidores e grandes empreendimentos do setor imobiliário via crédito coletivo P2P. A atuação envolveu modelagem de regras financeiras, liquidação, APIs transacionais de alta segurança e governança de infraestrutura em nuvem.",
+    "responsibilities": [
+      "Desenvolvimento de APIs robustas em Python (Django, Django REST Framework, FastAPI) garantindo conformidade com padrões de segurança bancária e transacional.",
+      "Arquitetura e implementação de pipelines de CI/CD automatizados utilizando Docker e serviços da AWS.",
+      "Gerenciamento de camadas de cache de alto desempenho e mensageria distribuída com Redis e ElasticSearch.",
+      "Refatoração profunda de serviços legados, assegurando estabilidade às captações de crédito."
+    ],
+    "highlights": [
+      "Implementação completa de esteira de CI/CD automatizada que acelerou os ciclos de release e deploy contínuo em produção.",
+      "Construção de novas funcionalidades centrais para análise e captação de investimentos no modelo P2P.",
+      "Atuação autônoma e remota em ambiente ágil de fintech com padrões rigorosos de segurança e compliance financeiro."
+    ],
+    "techStack": [
+      "Python",
+      "Django REST",
+      "FastAPI",
+      "PostgreSQL",
+      "AWS",
+      "Redis",
+      "ElasticSearch",
+      "Docker",
+      "CI/CD"
+    ],
     "image": {
       "src": "/images/expeer.webp",
-      "alt": "Expeer Plataforma"
+      "alt": "Expeer Plataforma de Investimentos"
     },
-    "links": [
-      {
-        "url": "https://app.expeer.com.br/",
-        "title": "Plataforma",
-        "index": 0
-      }
-    ]
+    "links": []
   },
   {
-    "title": "EterniaServer",
-    "label": "EterniaServer",
-    "index": 2,
-    "description": "Desenvolvedor e fundador de plugins e de um servidor de minecraft. Responsável por toda a manutenção, criação, design e planejamento, utilizando principalmente tecnologias como Java, Maven, Gradle, MySQL, MariaDB, Linux e Docker. Como destaque cnseguir criar uma comunidade de mais de 300 usuários, com uma média de 50 usuários ativos por dia que jogavam e ajudavam com os custos do servidor. Experiência de empreendedorismo e inovação bem sucedida.",
-    "image": {
-      "src": "/images/eternia.webp",
-      "alt": "EterniaServer Minecraft"
-    },
-    "links": [
-      {
-        "url": "https://eterniaserver.com.br/",
-        "title": "Site",
-        "index": 0
-      },
-      {
-        "url": "https://github.com/eterniaserver/",
-        "title": "Código fonte",
-        "index": 1
-      }
-    ]
-  },
-  {
+    "id": "yurinogueira",
     "title": "YuriNogueira",
     "label": "Yuri Nogueira Portfólio",
     "index": 3,
-    "description": "Um site PWA simples e direto, com o objetivo de demonstrar um pouco do meu portfólio. Site feito utiization Vue e Typescript seguindo as boas práticas de modo com que a manutenção seja simples e rápida.",
+    "company": "Projeto Pessoal",
+    "role": "Engenheiro de Software",
+    "period": "Contínuo",
+    "description": "Aplicação web moderna, responsiva e performática construída com Vue 3, TypeScript e Vite, desenvolvida sob arquitetura limpa de componentes e efeitos visuais interativos modernos.",
+    "overview": "Portfólio técnico desenvolvido como uma Single Page Application (PWA) de alto desempenho para demonstrar a trajetória profissional, arquitetura de soluções e projetos desenvolvidos com código limpo e boas práticas.",
+    "responsibilities": [
+      "Arquitetura de componentes modulares e reutilizáveis em Vue 3 com script setup e TypeScript.",
+      "Implementação de canvas interativo de partículas com alta eficiência de renderização.",
+      "Configuração de pipeline de build e deploy estático para o GitHub Pages.",
+      "Otimização de SEO, acessibilidade, meta tags Open Graph e PWA."
+    ],
+    "highlights": [
+      "Performance máxima no build e carregamento instantâneo via Vite.",
+      "Design escuro e elegante com identidade visual verde tech e interações visuais fluidas.",
+      "Código aberto e documentado com testes de build estrito em TypeScript."
+    ],
+    "techStack": [
+      "Vue 3",
+      "TypeScript",
+      "Vite",
+      "Element Plus",
+      "SCSS",
+      "Canvas API",
+      "PWA"
+    ],
     "image": {
       "src": "/images/yurinogueira.webp",
       "alt": "Yuri Nogueira Portfólio"
@@ -67,12 +165,12 @@
     "links": [
       {
         "url": "https://yurinogueira.dev.br/",
-        "title": "Site",
+        "title": "Site Oficial",
         "index": 0
       },
       {
         "url": "https://github.com/yurinogueira/yurinogueira/",
-        "title": "Código fonte",
+        "title": "Repositório GitHub",
         "index": 1
       }
     ]
